@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-do list App</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">What's Up <input type="text" id="name" placeholder="name"></h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>CREATE A TODO</h3>
+
+            <form action="" id="new-todo-form">
+                <h4>whats on your todo?</h4>
+                <input 
+                type="text" 
+                id="content" 
+                placeholder="e.g. make a video"> 
+
+                <h4>pick a category</h4>
+                <div class="options">
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="category" 
+                        id="category1" 
+                        value="business"> 
+                    </label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>
